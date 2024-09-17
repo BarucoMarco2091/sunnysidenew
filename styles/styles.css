@@ -108,6 +108,7 @@ body main #container1 .box1 .btn-learn {
     margin: 0 auto;
     color: var(--veryDarkDesaturatedBlue);
     font-family: Fraunces, sans-serif, serif;
+    border: none;
 }
 
 body main #container1 .box01 {
@@ -262,13 +263,49 @@ footer #footer-container #footer-logo {
     padding-bottom: 3vh;
 }
 
+footer #footer-container #footer-links {
+    padding-bottom: 15px;
+}
+
 footer #footer-container #footer-links ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+footer #footer-container #footer-links li {
+    cursor: pointer;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+footer #footer-container #footer-links a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+footer #footer-container #footer-icons {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
 @media screen and (max-width:480px) {
+
+    body main #testimonials h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    body main #testimonials #card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    body main #testimonials #card-grid #card {
+        margin-right: 2px;
+    }
+
     body main #container3 .box3 .box-text .box-text-title {
         font-size: 1.2rem;
     }
@@ -278,7 +315,7 @@ footer #footer-container #footer-links ul {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 1000px) {
 
     body header #header-container h1 {
         font-size: 2rem;
@@ -314,5 +351,10 @@ footer #footer-container #footer-links ul {
 
     body main #container3 .box3 .box-text .box-text-paragraph {
         font-size: 1rem;
+    }
+
+    body main #testimonials #card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
